@@ -1,0 +1,1668 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zetta Code\n"
+"POT-Creation-Date: 2018-07-05 07:53-0300\n"
+"PO-Revision-Date: 2018-07-05 08:04-0300\n"
+"Last-Translator: Thiago S. Santos <thiagos.xsantos@gmail.com>\n"
+"Language-Team: Thiago S. Santos <thiagos.xsantos@gmail.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.8\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;translate\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: module\n"
+"X-Poedit-SearchPath-1: config\n"
+"X-Poedit-SearchPath-2: vendor/zetta-code\n"
+"X-Poedit-SearchPathExcluded-0: data\n"
+
+#: config/autoload/navigation.global.php:28
+#: config/autoload/navigation.global.php:100
+#: module/Application/view/zetta/zend-authentication/account/index.phtml:1
+#: module/Application/view/zetta/zend-authentication/account/password-change.phtml:1
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/index.phtml:1
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/password-change.phtml:1
+msgid "Profile"
+msgstr "Perfil"
+
+#: config/autoload/navigation.global.php:37
+msgid "Sign out"
+msgstr "Sair"
+
+#: config/autoload/navigation.global.php:49
+#: config/autoload/navigation.global.php:96
+msgid "Home"
+msgstr "Início"
+
+#: config/autoload/navigation.global.php:57
+#: module/Vault/view/zetta/vault/credentials/add.phtml:2
+#: module/Vault/view/zetta/vault/credentials/delete-list.phtml:2
+#: module/Vault/view/zetta/vault/credentials/delete.phtml:2
+#: module/Vault/view/zetta/vault/credentials/edit.phtml:2
+#: module/Vault/view/zetta/vault/credentials/index.phtml:2
+#: module/Vault/view/zetta/vault/credentials/members.phtml:17
+#: module/Vault/view/zetta/vault/credentials/view.phtml:2
+#: module/Vault/view/zetta/vault/index/index.phtml:3
+#: module/Vault/view/zetta/vault/index/index.phtml:33
+msgid "Credentials"
+msgstr "Credenciais"
+
+#: config/autoload/navigation.global.php:66
+#: module/Vault/src/Form/SectionFieldset.php:77
+#: module/Vault/view/zetta/vault/accounts/add.phtml:2
+#: module/Vault/view/zetta/vault/accounts/delete-list.phtml:2
+#: module/Vault/view/zetta/vault/accounts/delete.phtml:2
+#: module/Vault/view/zetta/vault/accounts/edit.phtml:2
+#: module/Vault/view/zetta/vault/accounts/index.phtml:2
+#: module/Vault/view/zetta/vault/accounts/members.phtml:2
+#: module/Vault/view/zetta/vault/accounts/view.phtml:2
+#: module/Vault/view/zetta/vault/sections/_view.phtml:14
+msgid "Accounts"
+msgstr "Contas"
+
+#: config/autoload/navigation.global.php:76
+#: module/Vault/src/Form/AccountFieldset.php:77
+#: module/Vault/view/zetta/vault/accounts/_view.phtml:20
+#: module/Vault/view/zetta/vault/sections/add.phtml:2
+#: module/Vault/view/zetta/vault/sections/delete-list.phtml:2
+#: module/Vault/view/zetta/vault/sections/delete.phtml:2
+#: module/Vault/view/zetta/vault/sections/edit.phtml:2
+#: module/Vault/view/zetta/vault/sections/index.phtml:2
+#: module/Vault/view/zetta/vault/sections/view.phtml:2
+msgid "Sections"
+msgstr "Seções"
+
+#: config/autoload/navigation.global.php:85
+#: config/autoload/navigation.global.php:105
+#: module/Application/view/application/users/add.phtml:1
+#: module/Application/view/application/users/delete.phtml:1
+#: module/Application/view/application/users/edit.phtml:1
+#: module/Application/view/application/users/index.phtml:1
+#: module/Application/view/application/users/view.phtml:1
+msgid "Users"
+msgstr "Usuários"
+
+#: module/Application/src/Controller/UsersController.php:92
+msgid "Search User"
+msgstr "Buscar Usuário"
+
+#: module/Application/src/Controller/UsersController.php:144
+msgid "The user has been added."
+msgstr "O usuário foi adicionado."
+
+#: module/Application/src/Controller/UsersController.php:147
+#: module/Application/src/Controller/UsersController.php:246
+msgid "The user could not be saved. Please, try again."
+msgstr "O usuário não pôde ser salvo. Por favor, tente novamente."
+
+#: module/Application/src/Controller/UsersController.php:169
+#: module/Application/src/Controller/UsersController.php:190
+#: module/Application/src/Controller/UsersController.php:268
+msgid "The user could not be found."
+msgstr "O usuário não pôde ser encontrado."
+
+#: module/Application/src/Controller/UsersController.php:243
+msgid "The user has been updated."
+msgstr "O usuário foi atualizado."
+
+#: module/Application/src/Controller/UsersController.php:278
+msgid "The user has been deleted."
+msgstr "O usuário foi excluído."
+
+#: module/Vault/src/Controller/AccountsController.php:92
+msgid "Search Account"
+msgstr "Buscar Conta"
+
+#: module/Vault/src/Controller/AccountsController.php:121
+msgid "The account has been added."
+msgstr "A conta foi adicionada."
+
+#: module/Vault/src/Controller/AccountsController.php:124
+#: module/Vault/src/Controller/AccountsController.php:195
+msgid "The account could not be saved. Please, try again."
+msgstr "A conta não pôde ser salva. Por favor, tente novamente."
+
+#: module/Vault/src/Controller/AccountsController.php:151
+#: module/Vault/src/Controller/AccountsController.php:177
+#: module/Vault/src/Controller/AccountsController.php:248
+#: module/Vault/src/Controller/AccountsController.php:275
+#: module/Vault/src/Controller/AccountsController.php:296
+#: module/Vault/src/Controller/AccountsController.php:384
+msgid "The account could not be found."
+msgstr "A conta não pôde ser encontrada."
+
+#: module/Vault/src/Controller/AccountsController.php:192
+msgid "The account has been updated."
+msgstr "A conta foi atualizada."
+
+#: module/Vault/src/Controller/AccountsController.php:226
+#: module/Vault/src/Controller/AccountsController.php:260
+msgid "The account has been deleted."
+msgstr "A conta foi excluída."
+
+#: module/Vault/src/Controller/AccountsController.php:263
+msgid "The account could not be deleted. Please, try again."
+msgstr "A conta não pôde ser excluída. Por favor, tente novamente."
+
+#: module/Vault/src/Controller/AccountsController.php:344
+#: module/Vault/src/Controller/CredentialsController.php:393
+msgid "The member has been added."
+msgstr "O membro foi adicionado."
+
+#: module/Vault/src/Controller/AccountsController.php:346
+#: module/Vault/src/Controller/CredentialsController.php:395
+msgid "The member has already been added."
+msgstr "O membro já foi adicionado."
+
+#: module/Vault/src/Controller/AccountsController.php:350
+#: module/Vault/src/Controller/CredentialsController.php:399
+msgid "The member could not be added. Please, try again."
+msgstr "O membro não pôde ser salvo. Por favor, tente novamente."
+
+#: module/Vault/src/Controller/CredentialsController.php:122
+msgid "Search Credential"
+msgstr "Buscar Credencial"
+
+#: module/Vault/src/Controller/CredentialsController.php:154
+msgid "The credential has been added."
+msgstr "A credencial foi adicionada."
+
+#: module/Vault/src/Controller/CredentialsController.php:157
+#: module/Vault/src/Controller/CredentialsController.php:243
+msgid "The credential could not be saved. Please, try again."
+msgstr "A credencial não pôde ser salvo. Por favor, tente novamente."
+
+#: module/Vault/src/Controller/CredentialsController.php:184
+#: module/Vault/src/Controller/CredentialsController.php:210
+#: module/Vault/src/Controller/CredentialsController.php:296
+#: module/Vault/src/Controller/CredentialsController.php:323
+#: module/Vault/src/Controller/CredentialsController.php:344
+#: module/Vault/src/Controller/CredentialsController.php:433
+msgid "The credential could not be found."
+msgstr "A credencial não pôde ser encontrada."
+
+#: module/Vault/src/Controller/CredentialsController.php:240
+msgid "The credential has been updated."
+msgstr "A credencial foi atualizada."
+
+#: module/Vault/src/Controller/CredentialsController.php:274
+#: module/Vault/src/Controller/CredentialsController.php:308
+msgid "The credential has been deleted."
+msgstr "A credencial foi excluída."
+
+#: module/Vault/src/Controller/CredentialsController.php:311
+msgid "The credential could not be deleted. Please, try again."
+msgstr "A credencial não pôde ser excluída. Por favor, tente novamente."
+
+#: module/Vault/src/Controller/OrganizationsController.php:110
+#, fuzzy
+#| msgid "Buscar Evento"
+msgid "Buscar Transaction"
+msgstr "Buscar Evento"
+
+#: module/Vault/src/Controller/OrganizationsController.php:167
+#, fuzzy
+#| msgid "The user has been added."
+msgid "The transaction has been added."
+msgstr "O usuário foi adicionado."
+
+#: module/Vault/src/Controller/OrganizationsController.php:170
+#, fuzzy
+#| msgid "The user could not be saved. Please, try again."
+msgid "The transaction could not be saved. Please, try again."
+msgstr "O usuário não pôde ser salvo. Por favor, tente novamente."
+
+#: module/Vault/src/Controller/OrganizationsController.php:206
+#: module/Vault/src/Controller/OrganizationsController.php:359
+#: module/Vault/src/Controller/OrganizationsController.php:459
+#, fuzzy
+#| msgid "The user could not be found."
+msgid "The transaction could not be found."
+msgstr "O usuário não pôde ser encontrado."
+
+#: module/Vault/src/Controller/OrganizationsController.php:297
+#: module/Vault/src/Controller/OrganizationsController.php:341
+#, fuzzy
+#| msgid "The user has been deleted."
+msgid "The transaction has been deleted."
+msgstr "O usuário foi excluído."
+
+#: module/Vault/src/Controller/OrganizationsController.php:344
+#, fuzzy
+#| msgid "The action could not be completed. Please, try again."
+msgid "The transaction could not be deleted. Please, try again."
+msgstr "A ação não pôde ser concluída. Por favor, tente novamente."
+
+#: module/Vault/src/Controller/OrganizationsController.php:402
+#: module/Vault/src/Controller/OrganizationsController.php:441
+#, fuzzy
+#| msgid "Participante atualizado com sucesso!"
+msgid "Pagamento realizado com sucesso."
+msgstr "Participante atualizado com sucesso!"
+
+#: module/Vault/src/Controller/OrganizationsController.php:404
+#: module/Vault/src/Controller/OrganizationsController.php:443
+#, fuzzy
+#| msgid "Participante atualizado com sucesso!"
+msgid "Pagamento cancelado com sucesso."
+msgstr "Participante atualizado com sucesso!"
+
+#: module/Vault/src/Controller/SectionsController.php:87
+msgid "Search Section"
+msgstr "Buscar Seção"
+
+#: module/Vault/src/Controller/SectionsController.php:116
+msgid "The section has been added."
+msgstr "A seção foi adicionada."
+
+#: module/Vault/src/Controller/SectionsController.php:119
+#: module/Vault/src/Controller/SectionsController.php:190
+msgid "The section could not be saved. Please, try again."
+msgstr "A seção não pôde ser salva. Por favor, tente novamente."
+
+#: module/Vault/src/Controller/SectionsController.php:146
+#: module/Vault/src/Controller/SectionsController.php:172
+#: module/Vault/src/Controller/SectionsController.php:243
+#: module/Vault/src/Controller/SectionsController.php:270
+msgid "The section could not be found."
+msgstr "A seção não pôde ser encontrada."
+
+#: module/Vault/src/Controller/SectionsController.php:187
+msgid "The section has been updated."
+msgstr "A seção foi atualizada."
+
+#: module/Vault/src/Controller/SectionsController.php:221
+#: module/Vault/src/Controller/SectionsController.php:255
+msgid "The section has been deleted."
+msgstr "A seção foi excluída."
+
+#: module/Vault/src/Controller/SectionsController.php:258
+msgid "The section could not be deleted. Please, try again."
+msgstr "A seção não pôde ser excluída. Por favor, tente novamente."
+
+#: module/Vault/src/Form/AccountFieldset.php:43
+#: module/Vault/src/Form/AccountFieldset.php:46
+#: module/Vault/src/Form/CredentialFieldset.php:43
+#: module/Vault/src/Form/CredentialFieldset.php:46
+#: module/Vault/src/Form/SectionFieldset.php:43
+#: module/Vault/src/Form/SectionFieldset.php:46
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:84
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:87
+#: module/Application/view/application/users/_view.phtml:12
+#: module/Application/view/application/users/index.phtml:37
+#: module/Vault/view/zetta/vault/accounts/_view.phtml:2
+#: module/Vault/view/zetta/vault/accounts/delete-list.phtml:34
+#: module/Vault/view/zetta/vault/accounts/index.phtml:41
+#: module/Vault/view/zetta/vault/accounts/members.phtml:61
+#: module/Vault/view/zetta/vault/credentials/_view.phtml:2
+#: module/Vault/view/zetta/vault/credentials/delete-list.phtml:34
+#: module/Vault/view/zetta/vault/credentials/index.phtml:44
+#: module/Vault/view/zetta/vault/credentials/members.phtml:70
+#: module/Vault/view/zetta/vault/index/index.phtml:42
+#: module/Vault/view/zetta/vault/index/index.phtml:133
+#: module/Vault/view/zetta/vault/sections/_view.phtml:2
+#: module/Vault/view/zetta/vault/sections/delete-list.phtml:34
+#: module/Vault/view/zetta/vault/sections/index.phtml:41
+msgid "Name"
+msgstr "Nome"
+
+#: module/Vault/src/Form/AccountFieldset.php:56
+#: module/Vault/src/Form/AccountFieldset.php:59
+#: module/Vault/src/Form/CredentialFieldset.php:131
+#: module/Vault/src/Form/CredentialFieldset.php:134
+#: module/Vault/src/Form/SectionFieldset.php:56
+#: module/Vault/src/Form/SectionFieldset.php:59
+#: module/Vault/view/zetta/vault/accounts/_view.phtml:14
+#: module/Vault/view/zetta/vault/credentials/_view.phtml:40
+#: module/Vault/view/zetta/vault/credentials/index.phtml:45
+#: module/Vault/view/zetta/vault/index/index.phtml:43
+#: module/Vault/view/zetta/vault/index/index.phtml:134
+#: module/Vault/view/zetta/vault/sections/_view.phtml:8
+msgid "Description"
+msgstr "Descrição"
+
+#: module/Vault/src/Form/AccountFieldset.php:69
+#: module/Vault/src/Form/CredentialFieldset.php:121
+msgid "No section"
+msgstr "Nenhuma seção"
+
+#: module/Vault/src/Form/AccountForm.php:45
+#: module/Vault/src/Form/CredentialForm.php:45
+#: module/Vault/src/Form/SectionForm.php:45
+#: vendor/zetta-code/zend-authentication/src/Form/UserForm.php:47
+msgid "Submit"
+msgstr "Enviar"
+
+#: module/Vault/src/Form/CredentialFieldset.php:56
+#: module/Vault/src/Form/CredentialFieldset.php:59
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:96
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:99
+#: module/Vault/view/zetta/vault/credentials/_view.phtml:8
+#: module/Vault/view/zetta/vault/credentials/index.phtml:119
+#: module/Vault/view/zetta/vault/index/index.phtml:98
+#: module/Vault/view/zetta/vault/index/index.phtml:189
+msgid "Username"
+msgstr "Nome de Usuário"
+
+#: module/Vault/src/Form/CredentialFieldset.php:70
+#: module/Vault/src/Form/CredentialFieldset.php:73
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:123
+#: vendor/zetta-code/zend-authentication/src/Form/SigninForm.php:45
+#: vendor/zetta-code/zend-authentication/src/Form/SigninForm.php:48
+#: module/Application/view/zetta/zend-authentication/account/index.phtml:53
+#: module/Application/view/zetta/zend-authentication/account/index.phtml:54
+#: module/Vault/view/zetta/vault/credentials/_view.phtml:17
+#: module/Vault/view/zetta/vault/credentials/index.phtml:126
+#: module/Vault/view/zetta/vault/index/index.phtml:105
+#: module/Vault/view/zetta/vault/index/index.phtml:196
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/index.phtml:53
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/index.phtml:54
+msgid "Password"
+msgstr "Senha"
+
+#: module/Vault/src/Form/CredentialFieldset.php:89
+#: module/Vault/view/zetta/vault/credentials/_view.phtml:28
+msgid "Account"
+msgstr "Conta"
+
+#: module/Vault/src/Form/CredentialFieldset.php:95
+#: module/Vault/src/Form/SectionFieldset.php:69
+msgid "No account"
+msgstr "Nenhuma conta"
+
+#: module/Vault/src/Form/CredentialFieldset.php:119
+#: module/Vault/view/zetta/vault/credentials/_view.phtml:34
+msgid "Section"
+msgstr "Seção"
+
+#: module/Vault/src/Form/MemberForm.php:47
+msgid "Member"
+msgstr "Membro"
+
+#: module/Vault/src/Form/MemberForm.php:49
+msgid "No member"
+msgstr "Nenhum membro"
+
+#: module/Vault/src/Form/MemberForm.php:58
+msgid "Add"
+msgstr "Adicionar"
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AccountController.php:92
+msgid "Update"
+msgstr "Atualizar"
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AccountController.php:109
+msgid "Your profile has been updated."
+msgstr "Seu perfil foi atualizado."
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AccountController.php:112
+msgid "Your profile could not be saved. Please, try again."
+msgstr "Seu perfil não pôde ser salvo. Por favor, tente novamente."
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AccountController.php:152
+msgid "Your password has been changed."
+msgstr "Sua senha foi alterada."
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AccountController.php:155
+msgid "Your current password is incorrect. Please, try again."
+msgstr "Sua senha atual está incorreta. Por favor, tente novamente."
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AccountController.php:158
+msgid "Your password could not be saved. Please, try again."
+msgstr "Sua senha não pôde ser salva. Por favor, tente novamente."
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:186
+msgid "You're conected!"
+msgstr "Você está conectado!"
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:192
+msgid "Email or password is invalid."
+msgstr "Email ou senha inválida."
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:210
+msgid "You're disconected!"
+msgstr "Você foi desconectado!"
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:268
+msgid "Please, confirm your registration!"
+msgstr "Por favor confirme seu registro!"
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:269
+msgid "Please, click the link to confirm your registration => "
+msgstr "Por favor, clique no link para confirmar seu registro => "
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:273
+#, php-format
+msgid ""
+"An email has been sent to %s. Please, check your inbox and confirm your "
+"registration!"
+msgstr ""
+"Um email foi enviado para %s. Por favor, verifique sua caixa de entrada e "
+"confirme seu registro!"
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:277
+msgid "The account could not be created. Please, try again."
+msgstr "A conta não pôde ser criada. Por favor, tente novamente."
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:282
+msgid "Sign me up"
+msgstr "Registre-me"
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:322
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:433
+msgid "Token invalid or you already confirmed this link."
+msgstr "Token inválido ou você já confirmou este link."
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:332
+msgid "The email has been confirmed."
+msgstr "O email foi confirmado."
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:337
+msgid "Email already verified. Please, sign in."
+msgstr "Email já verificado. Por favor, entre."
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:378
+msgid "Recover password!"
+msgstr "Redefinir senha!"
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:379
+msgid "Please, click the link to recover your password => "
+msgstr "Por favor, clique no link para redefinir sua senha => "
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:383
+#, php-format
+msgid ""
+"An email has been sent to %s. Please, check your inbox and recover your "
+"password!"
+msgstr ""
+"Um email foi enviado para %s. Por favor, verifique sua caixa de entrada e "
+"redefina sua senha!"
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:388
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:457
+msgid "The action could not be completed. Please, try again."
+msgstr "A ação não pôde ser concluída. Por favor, tente novamente."
+
+#: vendor/zetta-code/zend-authentication/src/Controller/AuthController.php:454
+msgid "Your password has been changed. Please, sign in."
+msgstr "A sua senha foi alterada. Por favor, entre."
+
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:60
+#: module/Application/view/application/users/index.phtml:40
+#: module/Vault/view/zetta/vault/accounts/members.phtml:64
+#: module/Vault/view/zetta/vault/credentials/members.phtml:73
+msgid "Role"
+msgstr "Grupo"
+
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:66
+msgid "Select"
+msgstr "Selecionar"
+
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:109
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:112
+#: vendor/zetta-code/zend-authentication/src/Form/RecoverForm.php:34
+#: vendor/zetta-code/zend-authentication/src/Form/SigninForm.php:32
+#: vendor/zetta-code/zend-authentication/src/Form/SigninForm.php:35
+#: module/Application/view/application/users/_view.phtml:16
+#: module/Application/view/zetta/zend-authentication/password-recover.phtml:21
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/password-recover.phtml:21
+msgid "Email"
+msgstr "Email"
+
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:136
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:139
+#: module/Application/view/application/users/_form.phtml:27
+#: module/Application/view/application/users/_form.phtml:30
+#: module/Application/view/application/users/_view.phtml:4
+#: module/Application/view/zetta/zend-authentication/account/index.phtml:10
+#: module/Application/view/zetta/zend-authentication/account/index.phtml:61
+#: module/Application/view/zetta/zend-authentication/account/index.phtml:64
+#: module/Application/view/zetta/zend-authentication/account/password-change.phtml:10
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/index.phtml:10
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/index.phtml:61
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/index.phtml:64
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/password-change.phtml:10
+#: vendor/zetta-code/zend-bootstrap/view/partial/avatar.phtml:94
+msgid "Avatar"
+msgstr "Foto"
+
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:149
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:152
+msgid "Gender"
+msgstr "Gênero"
+
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:160
+#: module/Application/view/application/users/_view.phtml:21
+msgid "Female"
+msgstr "Feminino"
+
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:167
+msgid "Male"
+msgstr "Masculino"
+
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:181
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:184
+#: module/Application/view/application/users/_view.phtml:24
+msgid "Birthday"
+msgstr "Data de Nascimento"
+
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:194
+#: vendor/zetta-code/zend-authentication/src/Form/Fieldset/UserFieldset.php:197
+msgid "Bio"
+msgstr "Bio"
+
+#: vendor/zetta-code/zend-authentication/src/Form/PasswordChangeForm.php:34
+#: vendor/zetta-code/zend-authentication/src/Form/PasswordChangeForm.php:37
+msgid "Current Password"
+msgstr "Senha Atual"
+
+#: vendor/zetta-code/zend-authentication/src/Form/PasswordChangeForm.php:48
+#: vendor/zetta-code/zend-authentication/src/Form/PasswordChangeForm.php:51
+msgid "New Password"
+msgstr "Senha Nova"
+
+#: vendor/zetta-code/zend-authentication/src/Form/PasswordChangeForm.php:61
+msgid "Change Password"
+msgstr "Mudar Senha"
+
+#: vendor/zetta-code/zend-authentication/src/Form/RecoverForm.php:48
+#: module/Application/view/zetta/zend-authentication/password-recover.phtml:2
+#: module/Application/view/zetta/zend-authentication/recover.phtml:2
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/password-recover.phtml:2
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/recover.phtml:2
+msgid "Recover password"
+msgstr "Redefinir senha"
+
+#: vendor/zetta-code/zend-authentication/src/Form/RecoverForm.php:66
+msgid "Please verify you are human"
+msgstr "Por favor, verifique se você é humano"
+
+#: vendor/zetta-code/zend-authentication/src/Form/SigninForm.php:60
+msgid "Remember-me"
+msgstr "Lembrar-me"
+
+#: vendor/zetta-code/zend-authentication/src/Form/SigninForm.php:71
+msgid "Sign me in"
+msgstr "Conecte-me"
+
+#: vendor/zetta-code/zend-authentication/src/InputFilter/RecoverFilter.php:33
+#: vendor/zetta-code/zend-authentication/src/InputFilter/UserFilter.php:134
+msgid "Invalid email address"
+msgstr "Email inválido"
+
+#: vendor/zetta-code/zend-authentication/src/InputFilter/UserFilter.php:116
+msgid "The username '%value%' already exists"
+msgstr "O nome de usuário '%value%' já existe"
+
+#: vendor/zetta-code/zend-authentication/src/InputFilter/UserFilter.php:145
+msgid "The email '%value%' already exists"
+msgstr "O email '%value%' já existe"
+
+#: vendor/zetta-code/zend-authentication/src/Module.php:148
+msgid "Please, sign in."
+msgstr "Por favor, faça o login."
+
+#: vendor/zetta-code/zend-bootstrap/src/Form/SearchForm.php:28
+#: module/Application/view/layout/default/navbar.phtml:16
+msgid "Search"
+msgstr "Buscar"
+
+#: module/Application/view/application/users/_form.phtml:32
+#: module/Application/view/zetta/zend-authentication/account/index.phtml:66
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/index.phtml:66
+msgid "Choose the file"
+msgstr "Selecione o arquivo"
+
+#: module/Application/view/application/users/_view.phtml:20
+msgid "Genre"
+msgstr "Gênero"
+
+#: module/Application/view/application/users/add.phtml:8
+#: module/Application/view/application/users/index.phtml:8
+msgid "Add User"
+msgstr "Novo Usuário"
+
+#: module/Application/view/application/users/add.phtml:15
+#: module/Application/view/application/users/delete.phtml:27
+#: module/Application/view/application/users/edit.phtml:27
+#: module/Application/view/application/users/view.phtml:27
+#: module/Vault/view/zetta/vault/accounts/add.phtml:17
+#: module/Vault/view/zetta/vault/accounts/delete-list.phtml:17
+#: module/Vault/view/zetta/vault/accounts/delete.phtml:35
+#: module/Vault/view/zetta/vault/accounts/edit.phtml:35
+#: module/Vault/view/zetta/vault/accounts/members.phtml:39
+#: module/Vault/view/zetta/vault/accounts/view.phtml:35
+#: module/Vault/view/zetta/vault/credentials/add.phtml:17
+#: module/Vault/view/zetta/vault/credentials/delete-list.phtml:17
+#: module/Vault/view/zetta/vault/credentials/delete.phtml:29
+#: module/Vault/view/zetta/vault/credentials/edit.phtml:29
+#: module/Vault/view/zetta/vault/credentials/members.phtml:48
+#: module/Vault/view/zetta/vault/credentials/view.phtml:35
+#: module/Vault/view/zetta/vault/sections/add.phtml:17
+#: module/Vault/view/zetta/vault/sections/delete-list.phtml:17
+#: module/Vault/view/zetta/vault/sections/delete.phtml:29
+#: module/Vault/view/zetta/vault/sections/edit.phtml:29
+#: module/Vault/view/zetta/vault/sections/view.phtml:29
+msgid "Back"
+msgstr "Voltar"
+
+#: module/Application/view/application/users/delete.phtml:8
+msgid "Delete User"
+msgstr "Excluir Usuário"
+
+#: module/Application/view/application/users/delete.phtml:15
+#: module/Application/view/application/users/edit.phtml:15
+#: module/Vault/view/zetta/vault/accounts/delete.phtml:17
+#: module/Vault/view/zetta/vault/accounts/edit.phtml:17
+#: module/Vault/view/zetta/vault/accounts/members.phtml:21
+#: module/Vault/view/zetta/vault/sections/delete.phtml:17
+#: module/Vault/view/zetta/vault/sections/edit.phtml:17
+msgid "View"
+msgstr "Visualizar"
+
+#: module/Application/view/application/users/delete.phtml:21
+#: module/Application/view/application/users/index.phtml:66
+#: module/Application/view/application/users/view.phtml:15
+#: module/Vault/view/zetta/vault/accounts/delete.phtml:29
+#: module/Vault/view/zetta/vault/accounts/index.phtml:74
+#: module/Vault/view/zetta/vault/accounts/members.phtml:27
+#: module/Vault/view/zetta/vault/accounts/view.phtml:23
+#: module/Vault/view/zetta/vault/credentials/delete.phtml:23
+#: module/Vault/view/zetta/vault/credentials/index.phtml:97
+#: module/Vault/view/zetta/vault/credentials/members.phtml:36
+#: module/Vault/view/zetta/vault/credentials/view.phtml:23
+#: module/Vault/view/zetta/vault/index/index.phtml:79
+#: module/Vault/view/zetta/vault/index/index.phtml:170
+#: module/Vault/view/zetta/vault/sections/delete.phtml:23
+#: module/Vault/view/zetta/vault/sections/index.phtml:63
+#: module/Vault/view/zetta/vault/sections/view.phtml:17
+msgid "Edit"
+msgstr "Editar"
+
+#: module/Application/view/application/users/delete.phtml:41
+#: module/Application/view/application/users/edit.phtml:21
+#: module/Application/view/application/users/index.phtml:70
+#: module/Application/view/application/users/view.phtml:21
+#: module/Vault/view/zetta/vault/accounts/delete-list.phtml:61
+#: module/Vault/view/zetta/vault/accounts/delete.phtml:49
+#: module/Vault/view/zetta/vault/accounts/edit.phtml:29
+#: module/Vault/view/zetta/vault/accounts/index.phtml:81
+#: module/Vault/view/zetta/vault/accounts/members.phtml:33
+#: module/Vault/view/zetta/vault/accounts/view.phtml:29
+#: module/Vault/view/zetta/vault/credentials/delete-list.phtml:61
+#: module/Vault/view/zetta/vault/credentials/delete.phtml:43
+#: module/Vault/view/zetta/vault/credentials/edit.phtml:23
+#: module/Vault/view/zetta/vault/credentials/index.phtml:102
+#: module/Vault/view/zetta/vault/credentials/members.phtml:42
+#: module/Vault/view/zetta/vault/credentials/view.phtml:29
+#: module/Vault/view/zetta/vault/index/index.phtml:84
+#: module/Vault/view/zetta/vault/index/index.phtml:175
+#: module/Vault/view/zetta/vault/sections/delete-list.phtml:57
+#: module/Vault/view/zetta/vault/sections/delete.phtml:43
+#: module/Vault/view/zetta/vault/sections/edit.phtml:23
+#: module/Vault/view/zetta/vault/sections/index.phtml:70
+#: module/Vault/view/zetta/vault/sections/view.phtml:23
+msgid "Delete"
+msgstr "Excluir"
+
+#: module/Application/view/application/users/edit.phtml:8
+msgid "Edit User"
+msgstr "Editar Usuário"
+
+#: module/Application/view/application/users/index.phtml:26
+msgid "0 user"
+msgstr "0 usuário"
+
+#: module/Application/view/application/users/index.phtml:43
+#: module/Vault/view/zetta/vault/accounts/members.phtml:67
+#: module/Vault/view/zetta/vault/credentials/members.phtml:76
+msgid "Actions"
+msgstr "Ações"
+
+#: module/Application/view/application/users/view.phtml:8
+msgid "View User"
+msgstr "Visualizar Usuário"
+
+#: module/Application/view/error/403.phtml:7
+#: module/Application/view/error/404.phtml:10
+msgid "Would you like to go home?"
+msgstr "Você gostaria de ir para início?"
+
+#: module/Application/view/error/403.phtml:10
+#: module/Application/view/error/404.phtml:13
+msgid "Let's go home"
+msgstr "Vamos para o ínicio"
+
+#: module/Application/view/error/403.phtml:13
+#: module/Application/view/error/404.phtml:16
+#: module/Application/view/zetta/zend-authentication/recover.phtml:26
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/recover.phtml:26
+msgid "Contact Support"
+msgstr "Fale com o Suporte"
+
+#: module/Application/view/error/404.phtml:26
+msgid "The requested controller was unable to dispatch the request."
+msgstr "O controller solicitado não foi capaz de despachar a requisição."
+
+#: module/Application/view/error/404.phtml:29
+msgid "The requested middleware was unable to dispatch the request."
+msgstr "O middleware solicitado não foi capaz de despachar a requisição."
+
+#: module/Application/view/error/404.phtml:32
+msgid ""
+"The requested controller could not be mapped to an existing controller class."
+msgstr ""
+"O controller solicitado não pode ser mapeado para uma classe de controller "
+"existente."
+
+#: module/Application/view/error/404.phtml:35
+msgid "The requested controller was not dispatchable."
+msgstr "O controller solicitado não foi despachável."
+
+#: module/Application/view/error/404.phtml:38
+msgid "The requested URL could not be matched by routing."
+msgstr "A URL solicitada não pode ser igualada por roteamento."
+
+#: module/Application/view/error/404.phtml:41
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr "Não podemos determinar neste momento porque um 404 foi gerado."
+
+#: module/Application/view/error/404.phtml:50
+msgid "Controller"
+msgstr "Controller"
+
+#: module/Application/view/error/404.phtml:55
+#, php-format
+msgid "(resolves to %s)"
+msgstr "(resolve para %s)"
+
+#: module/Application/view/layout/default/footer.phtml:6
+msgid "Skeleton App"
+msgstr "Skeleton App"
+
+#: module/Application/view/layout/default/footer.phtml:8
+msgid "was"
+msgstr "foi"
+
+#: module/Application/view/layout/default/footer.phtml:9
+msgid "with"
+msgstr "com"
+
+#: module/Application/view/layout/default/footer.phtml:10
+msgid "by"
+msgstr "por"
+
+#: module/Application/view/layout/default/footer.phtml:15
+msgid "All rights reserved"
+msgstr "Todos os direitos reservados"
+
+#: module/Application/view/zetta/zend-authentication/account/index.phtml:38
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/index.phtml:38
+msgid "Update information"
+msgstr "Atualizar informação"
+
+#: module/Application/view/zetta/zend-authentication/account/index.phtml:56
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/index.phtml:56
+msgid "Change password?"
+msgstr "Mudar senha?"
+
+#: module/Application/view/zetta/zend-authentication/account/password-change.phtml:38
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/password-change.phtml:38
+msgid "Change password"
+msgstr "Mudar senha"
+
+#: module/Application/view/zetta/zend-authentication/account/password-change.phtml:57
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/password-change.phtml:57
+msgid "or"
+msgstr "ou"
+
+#: module/Application/view/zetta/zend-authentication/account/password-change.phtml:59
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/account/password-change.phtml:59
+msgid "back to profile"
+msgstr "voltar para perfil"
+
+#: module/Application/view/zetta/zend-authentication/layout/default.phtml:13
+#: module/Application/view/zetta/zend-authentication/password-recover.phtml:10
+#: module/Application/view/zetta/zend-authentication/recover.phtml:10
+#: module/Application/view/zetta/zend-authentication/signin.phtml:9
+#: module/Application/view/zetta/zend-authentication/signup.phtml:10
+msgid "Vault"
+msgstr "Vault"
+
+#: module/Application/view/zetta/zend-authentication/password-recover.phtml:12
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/password-recover.phtml:12
+msgid "Please reset your password."
+msgstr "Por favor redefina sua senha."
+
+#: module/Application/view/zetta/zend-authentication/password-recover.phtml:40
+#: module/Application/view/zetta/zend-authentication/recover.phtml:37
+#: module/Application/view/zetta/zend-authentication/signup.phtml:53
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/password-recover.phtml:40
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/recover.phtml:37
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/signup.phtml:53
+msgid "Already have an account?"
+msgstr "Já tem uma conta?"
+
+#: module/Application/view/zetta/zend-authentication/password-recover.phtml:42
+#: module/Application/view/zetta/zend-authentication/recover.phtml:39
+#: module/Application/view/zetta/zend-authentication/signup.phtml:55
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/password-recover.phtml:42
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/recover.phtml:39
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/signup.phtml:55
+msgid "Please login"
+msgstr "Por favor entre"
+
+#: module/Application/view/zetta/zend-authentication/recover.phtml:12
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/recover.phtml:12
+msgid "Forgot your password?"
+msgstr "Esqueceu sua senha?"
+
+#: module/Application/view/zetta/zend-authentication/recover.phtml:25
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/recover.phtml:25
+msgid "Don't remember your email?"
+msgstr "Não lembra do seu email?"
+
+#: module/Application/view/zetta/zend-authentication/signin.phtml:2
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/signin.phtml:2
+msgid "Sign in"
+msgstr "Entrar"
+
+#: module/Application/view/zetta/zend-authentication/signin.phtml:31
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/signin.phtml:30
+msgid "Forgotten password"
+msgstr "Esqueceu a senha"
+
+#: module/Application/view/zetta/zend-authentication/signup.phtml:2
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/signin.phtml:44
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/signup.phtml:2
+msgid "Sign up"
+msgstr "Inscreva-se"
+
+#: module/Application/view/zetta/zend-authentication/signup.phtml:12
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/signin.phtml:12
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/signup.phtml:12
+msgid "Please enter your user information."
+msgstr "Por favor, entre com suas informações de usuário."
+
+#: module/Vault/view/zetta/vault/accounts/_view.phtml:8
+#: module/Vault/view/zetta/vault/accounts/delete-list.phtml:35
+#: module/Vault/view/zetta/vault/accounts/index.phtml:42
+#: module/Vault/view/zetta/vault/credentials/delete-list.phtml:35
+msgid "Organization"
+msgstr "Organização"
+
+#: module/Vault/view/zetta/vault/accounts/_view.phtml:23
+#: module/Vault/view/zetta/vault/sections/delete-list.phtml:27
+#: module/Vault/view/zetta/vault/sections/index.phtml:17
+msgid "0 sections"
+msgstr "0 seções"
+
+#: module/Vault/view/zetta/vault/accounts/add.phtml:10
+#: module/Vault/view/zetta/vault/accounts/index.phtml:8
+msgid "Add account"
+msgstr "Nova conta"
+
+#: module/Vault/view/zetta/vault/accounts/delete-list.phtml:10
+#: module/Vault/view/zetta/vault/accounts/delete.phtml:10
+msgid "Delete account"
+msgstr "Excluir conta"
+
+#: module/Vault/view/zetta/vault/accounts/delete-list.phtml:27
+#: module/Vault/view/zetta/vault/accounts/index.phtml:17
+#: module/Vault/view/zetta/vault/sections/_view.phtml:17
+msgid "0 accounts"
+msgstr "0 contas"
+
+#: module/Vault/view/zetta/vault/accounts/delete.phtml:23
+#: module/Vault/view/zetta/vault/accounts/edit.phtml:23
+#: module/Vault/view/zetta/vault/accounts/index.phtml:67
+#: module/Vault/view/zetta/vault/accounts/members.phtml:3
+#: module/Vault/view/zetta/vault/accounts/view.phtml:17
+#: module/Vault/view/zetta/vault/credentials/delete.phtml:17
+#: module/Vault/view/zetta/vault/credentials/edit.phtml:17
+#: module/Vault/view/zetta/vault/credentials/index.phtml:99
+#: module/Vault/view/zetta/vault/credentials/members.phtml:18
+#: module/Vault/view/zetta/vault/credentials/view.phtml:17
+#: module/Vault/view/zetta/vault/index/index.phtml:81
+#: module/Vault/view/zetta/vault/index/index.phtml:172
+msgid "Members"
+msgstr "Membros"
+
+#: module/Vault/view/zetta/vault/accounts/edit.phtml:10
+msgid "Edit account"
+msgstr "Editar conta"
+
+#: module/Vault/view/zetta/vault/accounts/members.phtml:50
+#: module/Vault/view/zetta/vault/credentials/members.phtml:59
+msgid "No member found"
+msgstr "Nenhum membro encontrado"
+
+#: module/Vault/view/zetta/vault/accounts/members.phtml:86
+#: module/Vault/view/zetta/vault/credentials/members.phtml:95
+msgid "Revoke"
+msgstr "Revogar"
+
+#: module/Vault/view/zetta/vault/accounts/view.phtml:10
+msgid "View account"
+msgstr "Visualizar conta"
+
+#: module/Vault/view/zetta/vault/credentials/add.phtml:10
+#: module/Vault/view/zetta/vault/credentials/index.phtml:9
+msgid "Add credential"
+msgstr "Nova credencial"
+
+#: module/Vault/view/zetta/vault/credentials/delete-list.phtml:10
+#: module/Vault/view/zetta/vault/credentials/delete.phtml:10
+msgid "Delete credential"
+msgstr "Excluir credencial"
+
+#: module/Vault/view/zetta/vault/credentials/delete-list.phtml:27
+#: module/Vault/view/zetta/vault/credentials/index.phtml:19
+msgid "0 credentials"
+msgstr "0 credenciais"
+
+#: module/Vault/view/zetta/vault/credentials/edit.phtml:10
+msgid "Edit credential"
+msgstr "Editar credencial"
+
+#: module/Vault/view/zetta/vault/credentials/view.phtml:10
+msgid "View credential"
+msgstr "Visualizar credencial"
+
+#: module/Vault/view/zetta/vault/index/index.phtml:7
+#, fuzzy
+#| msgid "Evento not found."
+msgid "No account found"
+msgstr "Evento não encontrado."
+
+#: module/Vault/view/zetta/vault/sections/add.phtml:10
+#: module/Vault/view/zetta/vault/sections/index.phtml:8
+msgid "Add section"
+msgstr "Nova seções"
+
+#: module/Vault/view/zetta/vault/sections/delete-list.phtml:10
+#: module/Vault/view/zetta/vault/sections/delete.phtml:10
+msgid "Delete section"
+msgstr "Excluir seção"
+
+#: module/Vault/view/zetta/vault/sections/edit.phtml:10
+msgid "Edit section"
+msgstr "Editar seção"
+
+#: module/Vault/view/zetta/vault/sections/view.phtml:10
+msgid "View section"
+msgstr "Visualizar seção"
+
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/layout/default.phtml:13
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/password-recover.phtml:10
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/recover.phtml:10
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/signin.phtml:10
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/signup.phtml:10
+msgid "ZF Skeleton App"
+msgstr "ZF Skeleton App"
+
+#: vendor/zetta-code/zend-authentication/view/zetta/zend-authentication/signin.phtml:42
+msgid "Don't have an account?"
+msgstr "Ainda não possui uma conta?"
+
+#: vendor/zetta-code/zend-bootstrap/view/partial/avatar.phtml:97
+msgid "Available"
+msgstr "Disponível"
+
+#: vendor/zetta-code/zend-bootstrap/view/partial/avatar.phtml:100
+msgid "avatar"
+msgstr "foto"
+
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:3
+msgid "Page navigation info"
+msgstr "Informação de navegação da página"
+
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:6
+#, php-format
+msgid "Showing %s to %s of %s entries"
+msgstr "Visualizando %s até %s de %s registros"
+
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:8
+msgid "Showing 0 to 0 of 0 entries"
+msgstr "Visualizando 0 até 0 de 0 registros"
+
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:15
+msgid "Page navigation"
+msgstr "Navegação da página"
+
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:23
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:39
+msgid "First"
+msgstr "Primeiro"
+
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:31
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:46
+msgid "Previous"
+msgstr "Anterior"
+
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:60
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:67
+msgid "current"
+msgstr "atual"
+
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:79
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:95
+msgid "Next"
+msgstr "Próximo"
+
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:87
+#: vendor/zetta-code/zend-bootstrap/view/partial/paginator.phtml:102
+msgid "Last"
+msgstr "Último"
+
+#~ msgid "I have read and accepted the terms of use."
+#~ msgstr "Eu li e aceito os termos de uso."
+
+#~ msgid "You must agree to the terms of use."
+#~ msgstr "Você deve concordar com os termos de uso."
+
+#, fuzzy
+#~| msgid "Buscar Instituição"
+#~ msgid "Buscar Usuário"
+#~ msgstr "Buscar Instituição"
+
+#, fuzzy
+#~| msgid "Novo evento adicionado com sucesso!"
+#~ msgid "Novo usuário adicionado com sucesso!"
+#~ msgstr "Novo evento adicionado com sucesso!"
+
+#~ msgid "Formulário com erros!"
+#~ msgstr "Formulário com erros!"
+
+#, fuzzy
+#~| msgid "Certificado não encontrado."
+#~ msgid "Usuário não encontrado."
+#~ msgstr "Certificado não encontrado."
+
+#, fuzzy
+#~| msgid "Evento atualizado com sucesso!"
+#~ msgid "Usuário atualizado com sucesso!"
+#~ msgstr "Evento atualizado com sucesso!"
+
+#, fuzzy
+#~| msgid "Evento excluído com sucesso!"
+#~ msgid "Usuário excluído com sucesso!"
+#~ msgstr "Evento excluído com sucesso!"
+
+#~ msgid "Profile updated with success!"
+#~ msgstr "Perfil atulizado com sucesso!"
+
+#~ msgid "Form with errors!"
+#~ msgstr "Formulário com erros!"
+
+#~ msgid "Sign in with success!"
+#~ msgstr "Entrou com sucesso!"
+
+#~ msgid "Nome"
+#~ msgstr "Nome"
+
+#~ msgid "Confirm Password"
+#~ msgstr "Repita a Senha"
+
+#~ msgid "Zend Authentication"
+#~ msgstr "Zend Authentication"
+
+#~ msgid "Welcome to %sZend Framework 2%s"
+#~ msgstr "Bem vindo ao %sZend Framework 2%s"
+
+#~ msgid ""
+#~ "Congratulations! You have successfully installed the %sZF2 Skeleton "
+#~ "Application%s. You are currently running Zend Framework version %s. This "
+#~ "skeleton can serve as a simple starting point for you to begin building "
+#~ "your application on ZF2."
+#~ msgstr ""
+#~ "Parabéns! Você instalou a %sAplicação Skeleton ZF2%s com sucesso. Você "
+#~ "está usando a versão %s do Zend Framework. Este esqueleto serve "
+#~ "simplesmente como um ponto de inicio na construção da sua aplicação ZF2."
+
+#~ msgid "Fork Zend Framework 2 on GitHub"
+#~ msgstr "Replique Zend Framework 2 no GitHub"
+
+#~ msgid "Follow Development"
+#~ msgstr "Acompanhe o Desenvolvimento"
+
+#~ msgid ""
+#~ "Zend Framework 2 is under active development. If you are interested in "
+#~ "following the development of ZF2, there is a special ZF2 portal on the "
+#~ "official Zend Framework website which provides links to the ZF2 %swiki%s, "
+#~ "%sdev blog%s, %sissue tracker%s, and much more. This is a great resource "
+#~ "for staying up to date with the latest developments!"
+#~ msgstr ""
+#~ "Zend Framework 2 está sob desenvolvimento ativo. Se vocês está "
+#~ "interessado em acompanhar o desenvolvimento do ZF2, tem um portal ZF2 "
+#~ "especial no site oficial do Zend Framework que possui links para ZF2 "
+#~ "%swiki%s, %sdev blog%s, %sissue tracker%s, dentre outros. Este é um "
+#~ "excelente material para se manter atualizado com os últimos "
+#~ "desenvolvimentos!"
+
+#~ msgid "ZF2 Development Portal"
+#~ msgstr "Portal de Desenvolvimento do ZF2"
+
+#~ msgid "Discover Modules"
+#~ msgstr "Descubra Módulos"
+
+#~ msgid ""
+#~ "The community is working on developing a community site to serve as a "
+#~ "repository and gallery for ZF2 modules. The project is available %son "
+#~ "GitHub%s. The site is currently live and currently contains a list of "
+#~ "some of the modules already available for ZF2."
+#~ msgstr ""
+#~ "A Comunidade está trabalhando em desenvolver um site comunitário para "
+#~ "servir como repositório e galeria de módulos ZF2. O projeto estará "
+#~ "disponível %sem breve no GitHub%s. O site já está online e atualmente "
+#~ "contém uma lista de alguns dos módulos já disponíveis para ZF2."
+
+#~ msgid "Explore ZF2 Modules"
+#~ msgstr "Explore Módulos ZF2"
+
+#~ msgid "Help &amp; Support"
+#~ msgstr "Help &amp; Support"
+
+#~ msgid ""
+#~ "If you need any help or support while developing with ZF2, you may reach "
+#~ "us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
+#~ "feedback you may have regarding the beta releases. Alternatively, you may "
+#~ "subscribe and post questions to the %smailing lists%s."
+#~ msgstr ""
+#~ "Caso você precise de ajuda ou suporte enquanto desenvolve com ZF2, pode "
+#~ "nos encontrar pelo %s#zftalk on Freenode%s. Vamos gostar muito de ouvir "
+#~ "perguntas e opiniões que você possa ter em relação às versões beta. "
+#~ "Também, você pode se registrar e enviar perguntar para a %slista de e-mail"
+#~ "%s."
+
+#~ msgid "Ping us on IRC"
+#~ msgstr "Executar ping-nos no IRC"
+
+#~ msgid "A 404 error occurred"
+#~ msgstr "Ocorreu um erro de 404"
+
+#~ msgid "Additional information"
+#~ msgstr "Informações adicionais"
+
+#~ msgid "File"
+#~ msgstr "Arquivo"
+
+#~ msgid "Message"
+#~ msgstr "Mensagem"
+
+#~ msgid "Stack trace"
+#~ msgstr "Stack trace"
+
+#~ msgid "Previous exceptions"
+#~ msgstr "Excepções anteriores"
+
+#~ msgid "No Exception available"
+#~ msgstr "Sem Excepção disponível"
+
+#~ msgid "An error occurred"
+#~ msgstr "Ocorreu um erro"
+
+#~ msgid "TSS"
+#~ msgstr "TSS"
+
+#~ msgid "bio"
+#~ msgstr "bio"
+
+#~ msgid "Eventos"
+#~ msgstr "Eventos"
+
+#~ msgid "Instituições"
+#~ msgstr "Instituições"
+
+#~ msgid "Países"
+#~ msgstr "Países"
+
+#~ msgid "Estados"
+#~ msgstr "Estados"
+
+#~ msgid "Cidades"
+#~ msgstr "Cidades"
+
+#~ msgid "Modalidades"
+#~ msgstr "Modalidades"
+
+#~ msgid "Ministrantes"
+#~ msgstr "Ministrantes"
+
+#~ msgid "Perfil"
+#~ msgstr "Perfil"
+
+#~ msgid "Sair"
+#~ msgstr "Sair"
+
+#~ msgid "Certificado não encontrado!"
+#~ msgstr "Certificado não encontrado!"
+
+#~ msgid "Certificado validado com sucesso!"
+#~ msgstr "Certificado validado com sucesso!"
+
+#~ msgid "Search City"
+#~ msgstr "Buscar Cidade"
+
+#~ msgid "City not found"
+#~ msgstr "Cidade não encontrada"
+
+#~ msgid "Evento não encontrado."
+#~ msgstr "Evento não encontrado."
+
+#~ msgid "Nova instituição adicionada com sucesso!"
+#~ msgstr "Nova instituição adicionada com sucesso!"
+
+#~ msgid "Instituição não encontrada."
+#~ msgstr "Instituição não encontrada."
+
+#~ msgid "Instituição atualizada com sucesso!"
+#~ msgstr "Instituição atualizada com sucesso!"
+
+#~ msgid "Instituição excluída com sucesso!"
+#~ msgstr "Instituição excluída com sucesso!"
+
+#~ msgid "Buscar Ministrante"
+#~ msgstr "Buscar Ministrante"
+
+#~ msgid "Novo ministrante adicionado com sucesso!"
+#~ msgstr "Novo ministrante adicionado com sucesso!"
+
+#~ msgid "Ministrante não encontrado."
+#~ msgstr "Ministrante não encontrado."
+
+#~ msgid "Ministrante atualizado com sucesso!"
+#~ msgstr "Ministrante atualizado com sucesso!"
+
+#~ msgid "Ministrante excluído com sucesso!"
+#~ msgstr "Ministrante excluído com sucesso!"
+
+#~ msgid "Search Modalidade"
+#~ msgstr "Buscar Modalidade"
+
+#~ msgid "Modalidade não encontrado."
+#~ msgstr "Modalidade não encontrado."
+
+#~ msgid "Modalidade atualizado com sucesso!"
+#~ msgstr "Modalidade atualizado com sucesso!"
+
+#~ msgid "Modalidade excluído com sucesso!"
+#~ msgstr "Modalidade excluído com sucesso!"
+
+#~ msgid "Buscar Participante"
+#~ msgstr "Buscar Participante"
+
+#~ msgid "Novo participante adicionado com sucesso!"
+#~ msgstr "Novo participante adicionado com sucesso!"
+
+#~ msgid "Participante não encontrado."
+#~ msgstr "Participante não encontrado."
+
+#~ msgid "Em caso de edição. gerar novamente certificados!"
+#~ msgstr "Em caso de edição. gerar novamente certificados!"
+
+#~ msgid "Participante excluído com sucesso!"
+#~ msgstr "Participante excluído com sucesso!"
+
+#~ msgid "Certificados gerados com sucesso!"
+#~ msgstr "Certificados gerados com sucesso!"
+
+#~ msgid "Nenhum certificado foi gerado."
+#~ msgstr "Nenhum certificado foi gerado."
+
+#~ msgid "Certificado reenviado com sucesso!"
+#~ msgstr "Certificado reenviado com sucesso!"
+
+#~ msgid "Mensagem"
+#~ msgstr "Mensagem"
+
+#~ msgid "Reenviar"
+#~ msgstr "Reenviar"
+
+#~ msgid "Certificados reenviados com sucesso!"
+#~ msgstr "Certificados reenviados com sucesso!"
+
+#~ msgid "Nenhum certificado foi reenviado."
+#~ msgstr "Nenhum certificado foi reenviado."
+
+#~ msgid "State"
+#~ msgstr "Estado"
+
+#~ msgid "Shortname"
+#~ msgstr "Nome Curto"
+
+#~ msgid "Modalidade"
+#~ msgstr "Modalidade"
+
+#~ msgid "Data de Início"
+#~ msgstr "Data de Início"
+
+#~ msgid "Data de Término"
+#~ msgstr "Data de Término"
+
+#~ msgid "Carga Horária"
+#~ msgstr "Carga Horária"
+
+#~ msgid "Local"
+#~ msgstr "Local"
+
+#~ msgid "City"
+#~ msgstr "Cidade"
+
+#~ msgid "Ministrante"
+#~ msgstr "Ministrante"
+
+#~ msgid "Template"
+#~ msgstr "Template"
+
+#~ msgid "Comissão Organizadora"
+#~ msgstr "Comissão Organizadora"
+
+#~ msgid "Participante"
+#~ msgstr "Participante"
+
+#~ msgid "Country"
+#~ msgstr "País"
+
+#~ msgid "January"
+#~ msgstr "Janeiro"
+
+#~ msgid "February"
+#~ msgstr "Fevereiro"
+
+#~ msgid "April"
+#~ msgstr "Abril"
+
+#~ msgid "May"
+#~ msgstr "Maio"
+
+#~ msgid "June"
+#~ msgstr "Junho"
+
+#~ msgid "July"
+#~ msgstr "Julho"
+
+#~ msgid "August"
+#~ msgstr "Agosto"
+
+#~ msgid "September"
+#~ msgstr "Setembro"
+
+#~ msgid "October"
+#~ msgstr "Outubro"
+
+#~ msgid "December"
+#~ msgstr "Dezembro"
+
+#~ msgid "to"
+#~ msgstr "à"
+
+#~ msgid "of"
+#~ msgstr "de"
+
+#~ msgid "Certificado"
+#~ msgstr "Certificado"
+
+#~ msgid "Certificado Válido para"
+#~ msgstr "Certificado Válido para"
+
+#~ msgid "Cidade"
+#~ msgstr "Cidade"
+
+#~ msgid "Criado em"
+#~ msgstr "Criado em"
+
+#~ msgid "Certificado Inválido!"
+#~ msgstr "Certificado Inválido!"
+
+#~ msgid "Cities"
+#~ msgstr "Cidades"
+
+#~ msgid "Delete City"
+#~ msgstr "Excluir Cidade"
+
+#~ msgid "voltar para a lista"
+#~ msgstr "voltar para a lista"
+
+#~ msgid "Edit City"
+#~ msgstr "Editar Cidade"
+
+#~ msgid "New City"
+#~ msgstr "Nova Cidade"
+
+#~ msgid "0 cities"
+#~ msgstr "0 cidades"
+
+#~ msgid "Ações"
+#~ msgstr "Ações"
+
+#~ msgid "Countries"
+#~ msgstr "Países"
+
+#~ msgid "Editar Evento"
+#~ msgstr "Editar Evento"
+
+#~ msgid "Novo Evento"
+#~ msgstr "Novo Evento"
+
+#~ msgid "0 Eventos"
+#~ msgstr "0 Eventos"
+
+#~ msgid "Início"
+#~ msgstr "Início"
+
+#~ msgid "Término"
+#~ msgstr "Término"
+
+#~ msgid "Participantes"
+#~ msgstr "Participantes"
+
+#~ msgid "Instituição"
+#~ msgstr "Instituição"
+
+#~ msgid "Nova Instituição"
+#~ msgstr "Nova Instituição"
+
+#~ msgid "0 Instituições"
+#~ msgstr "0 Instituições"
+
+#~ msgid "Owner"
+#~ msgstr "Proprietário"
+
+#~ msgid "Excluir Ministrante"
+#~ msgstr "Excluir Ministrante"
+
+#~ msgid "Editar Ministrante"
+#~ msgstr "Editar Ministrante"
+
+#~ msgid "Novo Ministrante"
+#~ msgstr "Novo Ministrante"
+
+#~ msgid "0 ministrantes"
+#~ msgstr "0 ministrantes"
+
+#~ msgid "Excluir Modalidade"
+#~ msgstr "Excluir Modalidade"
+
+#~ msgid "Editar Modalidade"
+#~ msgstr "Editar Modalidade"
+
+#~ msgid "Novo Modalidade"
+#~ msgstr "Novo Modalidade"
+
+#~ msgid "0 modalidades"
+#~ msgstr "0 modalidades"
+
+#~ msgid "Nova Modalidade"
+#~ msgstr "Nova Modalidade"
+
+#~ msgid "Delete Participante"
+#~ msgstr "Excluir Participante"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Edit Paricipante"
+#~ msgstr "Editar Participante"
+
+#~ msgid "Evento"
+#~ msgstr "Evento"
+
+#~ msgid "0 participantes"
+#~ msgstr "0 participantes"
+
+#~ msgid "#"
+#~ msgstr "#"
+
+#~ msgid "Gerar Certificados"
+#~ msgstr "Gerar Certificados"
+
+#~ msgid "Reenviar Certificados"
+#~ msgstr "Reenviar Certificados"
+
+#~ msgid "Novo Participante"
+#~ msgstr "Novo Participante"
+
+#~ msgid "States"
+#~ msgstr "Estados"
+
+#~ msgid "Delete State"
+#~ msgstr "Excluir Estado"
+
+#~ msgid "Edit State"
+#~ msgstr "Editar Estado"
+
+#~ msgid "New State"
+#~ msgstr "Novo Estado"
+
+#~ msgid "0 states"
+#~ msgstr "0 estados"
+
+#~ msgid "Certz"
+#~ msgstr "Certz"
+
+#~ msgid "Cadastros"
+#~ msgstr "Cadastros"
+
+#~ msgid "New city add with success!"
+#~ msgstr "Nova cidade adicionada com sucesso!"
+
+#~ msgid "City updated with success!"
+#~ msgstr "Cidade atualizada com sucesso!"
+
+#~ msgid "City not found."
+#~ msgstr "Cidade não encontrada."
+
+#~ msgid "City deleted with success!"
+#~ msgstr "Cidade excluída com sucesso!"
+
+#~ msgid "New country add with success!"
+#~ msgstr "Novo país adicionado com sucesso!"
+
+#~ msgid "Country not found."
+#~ msgstr "País não encontrado."
+
+#~ msgid "Country updated with success!"
+#~ msgstr "País  atualizado com sucesso!"
+
+#~ msgid "Country deleted with success!"
+#~ msgstr "Estado excluído com sucesso!"
+
+#~ msgid "New evento add with success!"
+#~ msgstr "Novo evento adicionado com sucesso!"
+
+#~ msgid "Evento updated with success!"
+#~ msgstr "Evento  atualizado com sucesso!"
+
+#~ msgid "Event deleted with success!"
+#~ msgstr "Evento excluído com sucesso!"
+
+#~ msgid "Search Ministrante"
+#~ msgstr "Buscar Ministrante"
+
+#~ msgid "New ministrante add with success!"
+#~ msgstr "Novo ministrante adicionado com sucesso!"
+
+#~ msgid "Ministrante not found."
+#~ msgstr "Ministrante não encontrado."
+
+#~ msgid "Ministrante updated with success!"
+#~ msgstr "Ministrante  atualizado com sucesso!"
+
+#~ msgid "Ministrante deleted with success!"
+#~ msgstr "Ministrante excluído com sucesso!"
+
+#~ msgid "New modalidade add with success!"
+#~ msgstr "Nova modalidade adicionada com sucesso!"
+
+#~ msgid "Modalidade not found."
+#~ msgstr "Modalidade não encotrada."
+
+#~ msgid "Modalidade updated with success!"
+#~ msgstr "Modalidade atualizada com sucesso!"
+
+#~ msgid "Modalidade deleted with success!"
+#~ msgstr "Modalidade excluída com sucesso!"
+
+#~ msgid "Search Participante"
+#~ msgstr "Buscar Participante"
+
+#~ msgid "New participante add with success!"
+#~ msgstr "Novo participante adicionado com sucesso!"
+
+#~ msgid "Participante not found"
+#~ msgstr "Participante não encontrado"
+
+#~ msgid "%s updated with success"
+#~ msgstr "%s atualizado com sucesso"
+
+#~ msgid "Participante not found."
+#~ msgstr "Participante não encontrado."
+
+#~ msgid "Participante deleted with success!"
+#~ msgstr "Participante excluído com sucesso!"
+
+#~ msgid "New state add with success!"
+#~ msgstr "Novo estado adicionado com sucesso!"
+
+#~ msgid "State not found."
+#~ msgstr "Estado não encontrado."
+
+#~ msgid "State updated with success!"
+#~ msgstr "Estado atualizado com sucesso!"
+
+#~ msgid "State deleted with success!"
+#~ msgstr "Estado excluído com sucesso!"
+
+#~ msgid "Ministrante Template"
+#~ msgstr "Template Ministrante "
+
+#~ msgid "Created at"
+#~ msgstr "Criado em"
+
+#~ msgid "New Evento"
+#~ msgstr "Novo Evento"
+
+#~ msgid "Delete Ministrante"
+#~ msgstr "Excluir Ministrante"
+
+#~ msgid "Edit Ministrante"
+#~ msgstr "Editar Ministrante"
+
+#~ msgid "New Ministrante"
+#~ msgstr "Novo Ministrante"
+
+#~ msgid "Delete Modalidade"
+#~ msgstr "Excluir Modalidade"
+
+#~ msgid "Edit Modalidade"
+#~ msgstr "Editar Modalidade"
+
+#~ msgid "New Modalidade"
+#~ msgstr "Nova Modalidade"
+
+#~ msgid "New Participante"
+#~ msgstr "Novo Participante"
