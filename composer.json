@@ -1,0 +1,64 @@
+{
+  "name": "zetta-code/vault",
+  "description": "Vault | Password manager by Zetta Code",
+  "type": "project",
+  "license": "MIT",
+  "keywords": [
+    "vault",
+    "laminas"
+  ],
+  "homepage": "https://github.com/zetta-code/vault",
+  "authors": [
+    {
+      "name": "Thiago S. Santos",
+      "email": "thiagos.xsantos@gmail.com",
+      "homepage": "http://thiagossantos.com.br",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^5.6 || ^7.0",
+    "zendframework/zend-component-installer": "^1.0 || ^0.7 || ^1.0.0-dev@dev",
+    "zendframework/zend-mvc": "^3.0.1",
+    "zfcampus/zf-development-mode": "^3.0",
+    "zendframework/zend-mvc-i18n": "^1.0",
+    "zendframework/zend-i18n-resources": "^2.5",
+    "zendframework/zend-mail": "^2.9",
+    "zendframework/zend-navigation": "^2.8",
+    "tasmaniski/zend-params-helper": "^2.0",
+    "zetta-code/zend-bootstrap": "dev-master as 0.0.4",
+    "zetta-code/zend-authentication": "dev-master as 0.0.2",
+    "zendframework/zend-crypt": "^3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Application\\": "module/Application/src/",
+      "Zetta\\Vault\\": "module/Vault/src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ApplicationTest\\": "module/Application/test/"
+    }
+  },
+  "extra": [],
+  "scripts": {
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "development-disable": "zf-development-mode disable",
+    "development-enable": "zf-development-mode enable",
+    "development-status": "zf-development-mode status",
+    "post-create-project-cmd": [
+      "@development-enable"
+    ],
+    "serve": "php -S 0.0.0.0:8080 -t public/ public/index.php",
+    "test": "phpunit --colors=always",
+    "test-coverage": "phpunit --coverage-clover build/clover.xml",
+    "db-validate": "doctrine-module orm:validate-schema",
+    "db-update": "doctrine-module orm:schema-tool:update --force --dump-sql",
+    "mk-mo": "msgfmt data/language/pt_BR.po -o data/language/pt_BR.mo",
+    "sass": "sass --watch public/css/style.scss public/css/style.css"
+  }
+}

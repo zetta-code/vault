@@ -1,0 +1,44 @@
+# vscode files
+.vscode
+
+# Composer files
+composer.phar
+vendor/
+
+# Local configs
+config/autoload/*.local.php
+config/development.config.php
+
+# Binary gettext files
+*.mo
+
+# Data
+data/environment.php
+
+#Doctrine 2
+data/DoctrineORMModule/
+
+# IDE and editor specific files #
+/nbproject
+.idea/
+
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# User specific & automatically generated files #
+.vagrant/
+build/
+dist/
+tags/
+phpunit.xml
+ubuntu-xenial-16.04-cloudimg-console.log
+
+# enverioment
+.env
