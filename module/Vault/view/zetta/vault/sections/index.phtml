@@ -1,0 +1,84 @@
+<?php echo $this->partial('partial/title', [
+    'title' => $this->translate('Sections')
+]); ?>
+
+<div class="row mb-3">
+    <div class="col-sm-4 col-md-3 mb-3 mb-md-0">
+        <a class="btn btn-success" href="<?php echo $this->url('vault/default', ['controller' => 'sections', 'action' => 'add']); ?>">
+            <i class="fa fa-plus"></i> <?php echo $this->translate('Add section'); ?>
+        </a>
+    </div>
+</div>
+
+
+<div class="card">
+    <?php if (count($sections) == 0): ?>
+        <div class="card-body">
+            <p class="h5"><?php echo $this->translate('0 sections'); ?>.</p>
+        </div>
+    <?php else: ?>
+        <div class="card-header">
+            <div class="form-inline">
+                <div class="form-group">
+                    <label class="items-label my-1 mr-2">Nenhum item selecionado.</label>
+                    <button class="btn btn-sm btn-outline-danger items-action items-btn d-none"
+                            data-url="<?php echo $this->url('vault/default', ['controller' => 'sections', 'action' => 'delete']); ?>">
+                        <i class="fa fa-trash-o"></i> Excluir
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-sm table-hover">
+                <thead>
+                <tr>
+                    <th scope="col" class="checkbox-cell">
+                        <div class="custom-control custom-checkbox custom-checkbox-without-label">
+                            <input class="custom-control-input items-all" type="checkbox" name="item-all" value="all" id="itemAll">
+                            <label class="custom-control-label" for="itemAll"></label>
+                        </div>
+                    </th>
+                    <th scope="col"><?php echo $this->translate('Name'); ?></th>
+                    <th scope="col" class="text-center" style="width: 11em;">Ações</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($sections as $i => $section): ?>
+                    <tr>
+                        <th scope="row" class="checkbox-cell">
+                            <div class="custom-control custom-checkbox custom-checkbox-without-label">
+                                <input class="custom-control-input items-checkbox" type="checkbox" name="item-<?php echo $section->getId(); ?>" id="itemCheckbox<?php echo $section->getId(); ?>" value="<?php echo $section->getId(); ?>">
+                                <label class="custom-control-label" for="itemCheckbox<?php echo $section->getId(); ?>"></label>
+                            </div>
+                        </th>
+                        <td>
+                            <a href="<?php echo $this->url('vault/default', ['controller' => 'sections', 'action' => 'view', 'id' => $section->getId()]); ?>">
+                            <?php echo $section->getName(); ?>
+                            </a>
+                        </td>
+
+                        <td class="btn-toolbar justify-content-center">
+                            <div class="btn-group">
+                                <a href="<?php echo $this->url('vault/default', ['controller' => 'sections', 'action' => 'edit', 'id' =>  $section->getId()]); ?>"
+                                   data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Edit'); ?>">
+                                    <i class="fa fa-fw fa-pencil"></i>
+                                </a>
+                            </div>
+
+                            <div class="btn-group">
+                                <a href="<?php echo $this->url('vault/default', ['controller' => 'sections', 'action' => 'delete', 'id' =>  $section->getId()]); ?>"
+                                   data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Delete'); ?>">
+                                    <i class="fa fa-fw fa-trash-o"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer">
+            <?php echo $this->zettaPaginator($sections); ?>
+        </div>
+    <?php endif; ?>
+</div>

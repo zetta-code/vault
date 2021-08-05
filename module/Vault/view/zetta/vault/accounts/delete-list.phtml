@@ -1,0 +1,66 @@
+<?php echo $this->partial('partial/title', [
+    'title' => $this->translate('Accounts')
+]); ?>
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="mb-0">
+                    <?php echo $this->translate('Delete account'); ?>
+                </h5>
+            </div>
+            <div class="col-md-6">
+                <div class="btn-toolbar justify-content-end" role="toolbar">
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-link p-0" href="<?php echo $this->url('vault/default', ['controller' => 'accounts']);?>"
+                           data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Back'); ?>">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php if (count($accounts) == 0): ?>
+        <div class="card-body">
+            <p class="h5"><?php echo $this->translate('0 accounts'); ?>.</p>
+        </div>
+    <?php else: ?>
+        <div class="table-responsive">
+            <table class="table table-sm table-hover">
+                <thead>
+                <tr>
+                    <th scope="col"><?php echo $this->translate('Name'); ?></th>
+                    <th scope="col" style="width: 12em;"><?php echo $this->translate('Organization'); ?></th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($accounts as $i => $account): ?>
+                    <tr>
+                        <td>
+                            <a href="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'view', 'id' => $account->getId()]); ?>">
+                                <?php echo $account->getName(); ?>
+                            </a>
+                        </td>
+                        <td>
+                            <?php echo $account->getOrganization() != null ? $account->getOrganization()->getName() : '-'; ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card-body">
+            <form method="post" name="delete" role="form" action="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'delete']); ?>" id="delete">
+                <input type="hidden" name="step" value="2">
+                <input type="hidden" name="items" value="<?php echo $this->escapeHtmlAttr($items); ?>">
+                <input type="hidden" name="confirm" value="1">
+                <div class="form-group mb-0">
+                    <input type="submit" name="submit" class="btn btn-danger" id="submit" value="<?php echo $this->translate('Delete'); ?>">
+                </div>
+            </form>
+        </div>
+    <?php endif; ?>
+</div>

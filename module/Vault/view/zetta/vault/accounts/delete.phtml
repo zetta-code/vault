@@ -1,0 +1,53 @@
+<?php echo $this->partial('partial/title', [
+    'title' => $this->translate('Accounts')
+]); ?>
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="mb-0">
+                    <?php echo $this->translate('Delete account'); ?>
+                </h5>
+            </div>
+            <div class="col-md-6">
+                <div class="btn-toolbar justify-content-end" role="toolbar">
+                    <div class="btn-group mr-2" role="group">
+                        <a class="btn btn-link p-0" href="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'view', 'id' => $account->getId()]); ?>"
+                           data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('View'); ?>">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                    <div class="btn-group mr-2" role="group">
+                        <a class="btn btn-link p-0" href="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'members', 'id' => $account->getId()]); ?>"
+                           data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Members'); ?>">
+                            <i class="fa fa-users"></i>
+                        </a>
+                    </div>
+                    <div class="btn-group mr-2" role="group">
+                        <a class="btn btn-link p-0" href="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'edit', 'id' => $account->getId()]); ?>"
+                           data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Edit'); ?>">
+                            <i class="fa fa-pencil"></i>
+                        </a>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-link p-0" href="<?php echo $this->url('vault/default', ['controller' => 'accounts']);?>"
+                           data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Back'); ?>">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <form method="post" name="delete" role="form" action="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'delete', 'id' => $account->getId()]); ?>" id="delete">
+            <?php echo $this->partial('_view'); ?>
+
+            <div class="form-group">
+                <input type="submit" name="submit" class="btn btn-danger" id="submit" value="<?php echo $this->translate('Delete'); ?>">
+            </div>
+        </form>
+    </div>
+</div>

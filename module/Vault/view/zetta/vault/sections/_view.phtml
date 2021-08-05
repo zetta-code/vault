@@ -1,0 +1,28 @@
+<div class="form-group">
+    <label class="font-weight-bold"><?php echo $this->translate('Name'); ?></label>
+    <p class="form-control-plaintext">
+        <?php echo $section->getName(); ?>
+    </p>
+</div>
+<div class="form-group">
+    <label class="font-weight-bold"><?php echo $this->translate('Description'); ?></label>
+    <p class="form-control-plaintext">
+        <?php echo $section->getDescription() ?: '-'; ?>
+    </p>
+</div>
+<div class="form-group">
+    <label class="font-weight-bold"><?php echo $this->translate('Accounts'); ?></label>
+    <?php if (count($section->getAccounts()) === 0): ?>
+        <p class="form-control-plaintext">
+            <?php echo $this->translate('0 accounts'); ?>
+        </p>
+    <?php else: ?>
+    <div>
+        <ul class="list-group list-group-flush">
+            <?php foreach ($section->getAccounts() as $account): ?>
+                <li class="list-group-item"><?php echo $account->getName(); ?></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <?php endif; ?>
+</div>

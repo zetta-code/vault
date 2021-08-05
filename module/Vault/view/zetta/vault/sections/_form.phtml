@@ -1,0 +1,16 @@
+<?php
+echo $this->form()->openTag($form);
+$sectionFieldset = $form->get('section');
+?>
+    <?php echo $this->formHidden($sectionFieldset->get('id')); ?>
+
+    <?php echo $this->zettaFormRow($sectionFieldset->get('name')); ?>
+
+    <?php echo $this->zettaFormRow($sectionFieldset->get('description')); ?>
+
+    <?php echo $this->zettaFormRow($sectionFieldset->get('accounts')); ?>
+
+    <div class="form-group">
+        <?php echo $this->formRow($form->get('submit-btn')); ?>
+    </div>
+<?php echo $this->form()->closeTag(); ?>

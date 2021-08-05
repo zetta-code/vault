@@ -1,0 +1,98 @@
+<?php echo $this->partial('partial/title', [
+    'title' => $this->translate('Accounts')
+]); ?>
+
+<div class="row mb-3">
+    <div class="col-sm-4 col-md-3 mb-3 mb-md-0">
+        <a class="btn btn-success" href="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'add']); ?>">
+            <i class="fa fa-plus"></i> <?php echo $this->translate('Add account'); ?>
+        </a>
+    </div>
+</div>
+
+
+<div class="card">
+    <?php if (count($accounts) == 0): ?>
+        <div class="card-body">
+            <p class="h5"><?php echo $this->translate('0 accounts'); ?>.</p>
+        </div>
+    <?php else: ?>
+        <div class="card-header">
+            <div class="form-inline">
+                <div class="form-group">
+                    <label class="items-label my-1 mr-2">Nenhum item selecionado.</label>
+                    <button class="btn btn-sm btn-outline-danger items-action items-btn d-none"
+                            data-url="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'delete']); ?>">
+                        <i class="fa fa-trash-o"></i> Excluir
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-sm table-hover">
+                <thead>
+                <tr>
+                    <th scope="col" class="checkbox-cell">
+                        <div class="custom-control custom-checkbox custom-checkbox-without-label">
+                            <input class="custom-control-input items-all" type="checkbox" name="item-all" value="all" id="itemAll">
+                            <label class="custom-control-label" for="itemAll"></label>
+                        </div>
+                    </th>
+                    <th scope="col"><?php echo $this->translate('Name'); ?></th>
+                    <th scope="col" style="width: 12em;"><?php echo $this->translate('Organization'); ?></th>
+                    <th scope="col" class="text-center" style="width: 11em;">Ações</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($accounts as $i => $account): ?>
+                    <tr>
+                        <th scope="row" class="checkbox-cell">
+                            <div class="custom-control custom-checkbox custom-checkbox-without-label">
+                                <input class="custom-control-input items-checkbox" type="checkbox" name="item-<?php echo $account->getId(); ?>" id="itemCheckbox<?php echo $account->getId(); ?>" value="<?php echo $account->getId(); ?>">
+                                <label class="custom-control-label" for="itemCheckbox<?php echo $account->getId(); ?>"></label>
+                            </div>
+                        </th>
+                        <td>
+                            <a href="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'view', 'id' => $account->getId()]); ?>">
+                                <?php echo $account->getName(); ?>
+                            </a>
+                            <?php foreach ($account->getTags() as $tag): ?>
+                                <span class="badge badge-info"><?php echo $tag->getName(); ?></span>
+                            <?php endforeach; ?>
+                        </td>
+                        <td>
+                            <?php echo $account->getOrganization() != null ? $account->getOrganization()->getName() : '-'; ?>
+                        </td>
+
+                        <td class="btn-toolbar justify-content-center">
+                            <div class="btn-group">
+                                <a href="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'members', 'id' =>  $account->getId()]); ?>"
+                                   data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Members'); ?>">
+                                    <i class="fa fa-fw fa-users"></i>
+                                </a>
+                            </div>
+
+                            <div class="btn-group">
+                                <a href="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'edit', 'id' =>  $account->getId()]); ?>"
+                                   data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Edit'); ?>">
+                                    <i class="fa fa-fw fa-pencil"></i>
+                                </a>
+                            </div>
+
+                            <div class="btn-group">
+                                <a href="<?php echo $this->url('vault/default', ['controller' => 'accounts', 'action' => 'delete', 'id' =>  $account->getId()]); ?>"
+                                   data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Delete'); ?>">
+                                    <i class="fa fa-fw fa-trash-o"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer">
+            <?php echo $this->zettaPaginator($accounts); ?>
+        </div>
+    <?php endif; ?>
+</div>

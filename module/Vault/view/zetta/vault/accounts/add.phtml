@@ -1,0 +1,28 @@
+<?php echo $this->partial('partial/title', [
+    'title' => $this->translate('Accounts')
+]); ?>
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="mb-0">
+                    <?php echo $this->translate('Add account'); ?>
+                </h5>
+            </div>
+            <div class="col-md-6">
+                <div class="btn-toolbar justify-content-end" role="toolbar">
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-link p-0" href="<?php echo $this->url('vault/default', ['controller' => 'accounts']);?>"
+                           data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Back'); ?>">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <?php echo $this->partial('_form'); ?>
+    </div>
+</div>

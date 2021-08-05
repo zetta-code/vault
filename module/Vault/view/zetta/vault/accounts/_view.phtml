@@ -1,0 +1,48 @@
+<div class="form-group">
+    <label class="font-weight-bold"><?php echo $this->translate('Name'); ?></label>
+    <p class="form-control-plaintext">
+        <?php echo $account->getName(); ?>
+    </p>
+</div>
+<div class="form-group">
+    <label class="font-weight-bold"><?php echo $this->translate('Organization'); ?></label>
+    <p class="form-control-plaintext">
+        <?php echo $account->getOrganization() != null ? $account->getOrganization()->getName() : '-'; ?>
+    </p>
+</div>
+<div class="form-group">
+    <label class="font-weight-bold"><?php echo $this->translate('Description'); ?></label>
+    <p class="form-control-plaintext">
+        <?php echo $account->getDescription() ?: '-'; ?>
+    </p>
+</div>
+<div class="form-group">
+    <label class="font-weight-bold"><?php echo $this->translate('Sections'); ?></label>
+    <?php if (count($account->getSections()) === 0): ?>
+        <p class="form-control-plaintext">
+            <?php echo $this->translate('0 sections'); ?>
+        </p>
+    <?php else: ?>
+        <div>
+            <ul class="list-group list-group-flush">
+                <?php foreach ($account->getSections() as $section): ?>
+                    <li class="list-group-item"><?php echo $section->getName(); ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    <?php endif; ?>
+</div>
+<div class="form-group">
+    <label class="font-weight-bold"><?php echo $this->translate('Tags'); ?></label>
+    <?php if (count($account->getTags()) === 0): ?>
+        <p class="form-control-plaintext">
+            <?php echo '-'; ?>
+        </p>
+    <?php else: ?>
+        <p class="form-control-plaintext">
+            <?php foreach ($account->getTags() as $tag): ?>
+                <span class="badge badge-info"><?php echo $tag->getName(); ?></span>
+            <?php endforeach; ?>
+        </p>
+    <?php endif; ?>
+</div>
