@@ -1,0 +1,18 @@
+<?php $begin = 2017; $year = date('Y'); ?>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">
+            <a href="https://github.com/zetta-code/skeleton-application">
+                <?php echo $this->translate('Skeleton App') ?>
+            </a>
+            <?php echo $this->translate('was'); ?> <i class="fa fa-code text-success"></i>
+            <?php echo $this->translate('with'); ?> <i class="fa fa-heart text-danger"></i>
+            <?php echo $this->translate('by'); ?> <a href="https://github.com/zetta-code"> Zetta Code</a>.
+        </p>
+        <p class="text-muted">
+            <i class="fa fa-copyright"></i><span class="sr-only">&copy</span>
+            <?php echo $begin . ($year > $begin ? ' - ' . $year : ''); ?>
+            Zetta Code - <?php echo $this->translate('All rights reserved') ?>.
+        </p>
+    </div>
+</footer>

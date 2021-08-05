@@ -1,0 +1,38 @@
+<?php echo $this->partial('partial/title', ['title' => $this->translate('Users')]); ?>
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="mb-0">
+                    <?php echo $this->translate('Edit User'); ?>
+                </h5>
+            </div>
+            <div class="col-md-6">
+                <div class="btn-toolbar justify-content-end" role="toolbar">
+                    <div class="btn-group mr-2" role="group">
+                        <a class="btn btn-link p-0" href="<?php echo $this->url('home/default', ['controller' => 'users', 'action' => 'view', 'id' => $user->getId()]); ?>"
+                           data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('View'); ?>">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                    <div class="btn-group mr-2" role="group">
+                        <a class="btn btn-link p-0" href="<?php echo $this->url('home/default', ['controller' => 'users', 'action' => 'delete', 'id' => $user->getId()]); ?>"
+                           data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Delete'); ?>">
+                            <i class="fa fa-trash-o"></i>
+                        </a>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-link p-0" href="<?php echo $this->url('home/default', ['controller' => 'users']);?>"
+                           data-toggle="tooltip" data-placement="bottom" title="<?php echo $this->translate('Back'); ?>">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <?php echo $this->partial('_form'); ?>
+    </div>
+</div>

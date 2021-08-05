@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark top-header">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="toggle-left-sidebar btn" data-toggle="collapse" data-target="#sidebar-nav" role="button" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle sidebar navigation"><span class="navbar-toggler-icon"></span></a>
+            <a class="navbar-brand ml-md-3" href="<?php echo $this->url('home') ?>"><span><img src="<?php echo $this->basePath('img/brand.svg') ?>" height="20" alt="brand"/></span>&nbsp;Vault</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRight" aria-controls="navbarRight" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarRight">
+            <form method="get" name="search" class="search-header mr-auto" role="form" novalidate="1" id="search">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-light" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                    <input type="text" name="q" class="form-control" placeholder="<?php echo $this->translate('Search'); ?>" value="<?php echo $this->params()->fromQuery('q', ''); ?>">
+                </div>
+            </form>
+            <div class="navbar-right">
+                <?php echo $this->navigation('navigation')->menu()->setUlClass('nav navbar-nav float-md-right')->putPagePartial(\Zetta\ZendBootstrap\Navigation\Page\Avatar::class, 'partial/avatar')->escapeLabels(false); ?>
+            </div>
+        </div>
+    </div>
+</nav>

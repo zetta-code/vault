@@ -1,0 +1,55 @@
+<?php
+echo $this->form()->openTag($form);
+$userFieldset = $form->get('user');
+?>
+    <?php echo $this->formHidden($userFieldset->get('id')); ?>
+
+    <?php echo $this->zettaFormRow($userFieldset->get('role')); ?>
+
+    <?php echo $this->zettaFormRow($userFieldset->get('username')); ?>
+
+    <?php echo $this->zettaFormRow($userFieldset->get('name')); ?>
+
+    <?php echo $this->zettaFormRow($userFieldset->get('email')); ?>
+
+    <div class="form-group toogle-password">
+        <?php echo $this->formLabel($userFieldset->get('password')); ?>
+        <?php
+        if (count($userFieldset->get('password')->getMessages()) !== 0) {
+            $userFieldset->get('password')->setAttribute('class', $userFieldset->get('password')->getAttribute('class') . ' is-invalid');
+        }
+        echo $this->formElement($userFieldset->get('password')); ?>
+        <i class="fa btn-toogle-password" onclick="togglePassword('#signup-password'); return false;"></i>
+        <?php echo $this->formElementErrors($userFieldset->get('password'), ['class' => 'invalid-feedback']); ?>
+    </div>
+
+    <div>
+        <label><?php echo $this->translate('Avatar'); ?></label>
+
+        <div>
+            <img class="mb-3" id='avatar-preview' width="128" height="128" src="<?php echo $this->basePath($user->getAvatar()); ?>" alt="<?php echo $this->translate('Avatar'); ?>">
+            <input id="avatar-upload" type="file" name="<?php echo $userFieldset->get('avatar')->getName(); ?>" style="display: none">
+            <label id="avatar-label" class="btn btn-outline-secondary" for="avatar-upload"><?php echo $this->translate('Choose the file'); ?></label>
+        </div>
+        <?php echo $this->formElementErrors($userFieldset->get('avatar')); ?>
+    </div>
+
+    <?php echo $this->zettaFormRow($userFieldset->get('gender')); ?>
+
+    <?php echo $this->zettaFormRow($userFieldset->get('birthday')); ?>
+
+    <?php echo $this->zettaFormRow($userFieldset->get('bio')); ?>
+
+    <div class="form-group">
+        <?php echo $this->formRow($form->get('submit-btn')); ?>
+    </div>
+<?php echo $this->form()->closeTag(); ?>
+
+<?php
+$this->inlineScript()->captureStart();
+echo <<<JS
+uploadImg('avatar');
+JS;
+$this->inlineScript()->captureEnd();
+?>
+

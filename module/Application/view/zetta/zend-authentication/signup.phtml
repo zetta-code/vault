@@ -1,0 +1,59 @@
+<?php
+$title = $this->translate('Sign up');
+$this->headTitle($title);
+?>
+
+<div class="splash-container sign-up">
+    <div class="card card-border-color card-border-color-primary">
+        <div class="card-header">
+            <a href="<?php echo $this->url($routes['home']['name'], $routes['home']['params'], $routes['home']['options'], $routes['home']['reuseMatchedParams']); ?>">
+                <img src="<?php echo $this->basePath('img/brand.svg') ?>" height="48" class="logo-img" alt="<?php $this->translate('Vault'); ?>">
+            </a>
+            <span class="splash-description"><?php echo $this->translate('Please enter your user information.'); ?></span>
+        </div>
+        <div class="card-body">
+            <?php echo $this->zettaFlashMessenger(); ?>
+
+            <?php
+            echo $this->form()->openTag($form);
+            $userFieldset = $form->get('signup');
+            ?>
+                <span class="splash-title pb-4"><?php echo $title ?></span>
+
+                <?php echo $this->formHidden($userFieldset->get('id')); ?>
+
+                <?php echo $this->zettaFormRow($userFieldset->get('name')); ?>
+
+                <?php echo $this->zettaFormRow($userFieldset->get('email')); ?>
+
+                <div class="form-group toogle-password">
+                    <?php echo $this->formLabel($userFieldset->get('password')); ?>
+                    <?php
+                    if (count($userFieldset->get('password')->getMessages()) !== 0) {
+                        $userFieldset->get('password')->setAttribute('class', $userFieldset->get('password')->getAttribute('class') . ' is-invalid');
+                    }
+                    echo $this->formElement($userFieldset->get('password')); ?>
+                    <i class="fa btn-toogle-password" onclick="togglePassword('#signup-password'); return false;"></i>
+                    <?php echo $this->formElementErrors($userFieldset->get('password'), ['class' => 'invalid-feedback']); ?>
+                </div>
+
+                <div class="form-group">
+                    <?php echo $this->formRow($form->get('submit-btn')); ?>
+                </div>
+
+                <p class="text-secondary">
+                    Ao criar uma conta, você concorda com nossos <a href="/legal" target="_blank">Termos de Serviço</a>
+                    e <a href="/privacy" target="_blank">Política de Privacidade</a>.
+                </p>
+            <?php echo $this->form()->closeTag(); ?>
+        </div>
+    </div>
+    <div class="splash-footer">
+        <span>
+            <?php echo $this->translate('Already have an account?'); ?>
+            <a href="<?php echo $this->url($routes['signin']['name'], $routes['signin']['params'], $routes['signin']['options'], $routes['signin']['reuseMatchedParams']); ?>">
+                <?php echo $this->translate('Please login'); ?>
+            </a>
+        </span>
+    </div>
+</div>
